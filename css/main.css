@@ -71,7 +71,7 @@ li {
 
 hr { 
     position: relative; 
-    top: 20px; 
+    top: 0px; 
     border: none; 
     height: 12px; 
     background: black; 
