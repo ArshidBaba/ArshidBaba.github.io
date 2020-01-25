@@ -15,7 +15,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: rgb(23, 240, 59);
+    color: rgb(4, 107, 21);
 }
 a:hover {
     text-decoration: underline;
@@ -68,6 +68,12 @@ li {
 .language-cpp highlighter-rouge{
     background-color: aqua;
 }
-* {
-    box-sizing: border-box;
-}
+
+hr { 
+    position: relative; 
+    top: 20px; 
+    border: none; 
+    height: 12px; 
+    background: black; 
+    margin-bottom: 50px; 
+} 
