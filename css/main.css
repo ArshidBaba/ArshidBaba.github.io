@@ -46,8 +46,14 @@ ul.posts li {
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     list-style: none;
 } */
-
+/* 
 ul {
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+} */
+
+.list-heading {
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     margin: 20px auto 40px; 
     font-size: 1.5em;
