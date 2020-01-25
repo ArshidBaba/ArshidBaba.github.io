@@ -15,13 +15,13 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: rgb(29, 160, 62);
+    color: rgb(226, 65, 65);
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     /* 'Lucida Console', 'Monaco', 'monospace'; */
 }
