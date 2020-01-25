@@ -23,7 +23,7 @@ a:hover {
 h1 {
     font-size: 2em;
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* 'Lucida Console', 'Monaco', 'monospace'; */
 }
 p {
