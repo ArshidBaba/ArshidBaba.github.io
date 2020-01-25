@@ -70,10 +70,10 @@ li {
 }
 
 hr { 
-    /* position: relative;  */
-    top: 0px; 
+    position: relative; 
+    top: 1px; 
     border: none; 
-    height: 0.5px; 
+    height: 1px; 
     background: rgb(45, 65, 240); 
     margin-bottom: 30px; 
 } 
