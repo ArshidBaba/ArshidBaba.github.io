@@ -73,7 +73,7 @@ hr {
     position: relative; 
     top: 0px; 
     border: none; 
-    height: 1px; 
+    height: 0px; 
     background: rgb(45, 65, 240); 
     margin-bottom: 50px; 
 } 
