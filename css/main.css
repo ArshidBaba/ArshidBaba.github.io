@@ -24,6 +24,7 @@ h1 {
     font-size: 2em;
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1.5;
+    text-decoration: underline;
     /* 'Lucida Console', 'Monaco', 'monospace'; */
 }
 p {
@@ -63,8 +64,4 @@ ul {
 li {
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1.8em;
-}
-
-.heading {
-    line-height: 1.5em;
 }
