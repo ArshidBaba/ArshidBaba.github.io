@@ -52,3 +52,7 @@ ul {
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
+
+li {
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
