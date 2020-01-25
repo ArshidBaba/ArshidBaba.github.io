@@ -70,7 +70,7 @@ li {
 }
 
 hr { 
-    position: relative; 
+    /* position: relative;  */
     top: 0px; 
     border: none; 
     height: 0.5px; 
