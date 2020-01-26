@@ -4,6 +4,19 @@
   <title>Science + Computers + Mathematics and Stuff</title>
   <!-- link to main stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="//path/to/pseudocode/pseudocode.min.css">
+  <script src="//path/to/pseudocode/pseudocode.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <h1 class="heading"><a href="?">Science + Computers + Mathematics and Stuff</a></h1>
@@ -36,12 +49,13 @@
   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
   <a name="Django_Framework"><h1>Django Framework</h1></a>   
   <hr>   
-  <p><a href="https://www.djangoproject.com/">Django</a>   is a Python framework used for web development. I picked up Django framework in ending 2018. In 2019 I didn't do anything with it. However I picked it up again this year. I think now I have a better understanding of the whole framework. In production however, people do not use Django templates for the front end. They instead make RESTful APIs with then could communicate with any outter source. </p> 
-
+  <p><a href="https://www.djangoproject.com/">Django</a>   is a Python framework used for web development. I picked up Django framework in ending 2018. In 2019 I didn't do anything with it. However I picked it up again this year. I think now I have a better understanding of the whole framework. In production however, people do not use Django templates for the front end. They instead make RESTful APIs which then could communicate with any outter source. Django has components like Models, Views, Templates and URLs.
+      </p> 
+  <img src="//images/Django-Architecture-Diagram.jpg" height="350" width="700">
 </html>
 
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">algorithm</span> <span class="n">quicksort</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">)</span> <span class="n">is</span>
+<!-- <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">algorithm</span> <span class="n">quicksort</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">)</span> <span class="n">is</span>
   <span class="k">if</span> <span class="n">lo</span> <span class="o">&lt;</span> <span class="n">hi</span> <span class="n">then</span>
       <span class="n">p</span> <span class="o">:=</span> <span class="n">partition</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">hi</span><span class="p">)</span>
       <span class="n">quicksort</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -56,4 +70,4 @@
           <span class="n">i</span> <span class="o">:=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
   <span class="n">swap</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="n">with</span> <span class="n">A</span><span class="p">[</span><span class="n">hi</span><span class="p">]</span>
   <span class="k">return</span> <span class="n">i</span>
-</code></pre></div></div> 
+</code></pre></div></div>  -->
