@@ -15,24 +15,27 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: rgb(4, 107, 21);
+    color: rgb(72, 84, 245);
+    /* font-weight: 800; */
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     /* text-decoration: underline; */
     /* 'Lucida Console', 'Monaco', 'monospace'; */
     margin-top: 0px;
     margin-bottom: 1px;
+    font-weight: 500;
 }
 p {
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 1em;
     line-height: 1.6em;
     color: #333;
+    font-weight: 400;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -63,8 +66,14 @@ ul {
 }
 
 li {
-    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1.8em;
+    font-weight: 900; */
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #333;
+    font-weight: 400;
 }
 
 .language-cpp highlighter-rouge{
@@ -76,6 +85,10 @@ hr {
     top: 1px; 
     border: none; 
     height: 1px; 
-    background: rgb(45, 65, 240); 
+    background: rgb(239, 240, 241); 
     margin-bottom: 30px; 
 } 
+
+/* .list-item {
+    font-weight: 900;
+} */
