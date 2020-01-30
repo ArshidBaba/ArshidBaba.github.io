@@ -25,6 +25,9 @@
   <h3 class="list-heading">Table of Contents:</h3>
   <ul>
     <li class="list-item">
+      <a href=#Email_Sending_App> Email Sending App</a>
+    </li>
+    <li class="list-item">
       <a href=#Celery> Celery with Django</a>
     </li>
     <li>
@@ -38,12 +41,15 @@
     </li>
   </ul>
 
+  <a name="Email_Sending_App"><h1>Email Sending App</h1></a>
+  <hr>
+
   <a name="Celery"><h1>Celery with Django</h1></a>
   <hr>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.zokuuuuuu</p> 
+  <p>In production environment the tasks that take longer to execute are supposed to run seperately so that we can achieve maximum throughput on requests and responses. For Django with <a href="https://celery.readthedocs.io/en/latest/django/first-steps-with-django.html">Celery</a>. Celery is a task queue which helps us run longer running code asynchronously. It used Redis or RabbitMQ as the task broker. I used Celery to send an email from the backend because sending an email is also a time consuming task so we delegate it to Celery. I made it work quickly in my local environment but it was giving me trouble in production. I was deploying my app to Heroku and Celery wasn't executong properly.</p> 
   <a name="RESTful_APIs"><h1>RESTful APIs in Django</h1></a>
   <hr>
-  <p>I started making RESTful APIs and I use <a href="https://www.django-rest-framework.org/">Django Rest Framework</a> for that. One can make a rest api in plan Django but that would require a lot of effort and DRF provied other features the plane Django does not. DRF work on top of Django. Django treats it as another installed app. DRF provides Serializers, Routers for do the basic restful stuff. I still have to learn a lot about this framework but I think am getting the hang of it.</p> 
+  <p>I started making RESTful APIs and I use <a href="https://www.django-rest-framework.org/">Django Rest Framework</a> for that. One can make a rest api in plan Django but that would require a lot of effort and DRF provied other features which plane Django does not. DRF work on top of Django. Django treats it as another installed app. DRF provides Serializers, Routers to do the basic restful stuff. I still have to learn a lot about this framework but I think I am getting a hang of it.</p> 
   <a name="Heroku_Deployment"><h1>Heroku Deployment</h1></a>
   <hr>
   <p>I had never deployed a website before so my first deployment platform is <a href="http://heroku.com/">Heroku</a>. I found many things of ease and struggled with many other things. I noticed one thing is that heroku allocates resources which usually are provided by <a href="https://aws.amazon.com/">AWS</a> for example the Redis cache I used for asynchronouus tasks was actually an amazon ec2 instance and it turned out the Heroku is hosted on AWS.</p> 
