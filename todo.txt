@@ -1,0 +1,13 @@
+Python, 
+Trig, 
+Calc(I,II,III), 
+Cellular Automata, 
+Algorithms, 
+Theory of Computation, 
+Classical Mechanics, 
+General Relativity, 
+Quantum Mechanics, 
+Discrete Mathematics, 
+Raspberry Pi, 
+Drawing, 
+Human Anatomy & Physiology.
