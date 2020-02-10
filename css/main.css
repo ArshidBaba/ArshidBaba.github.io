@@ -93,3 +93,11 @@ hr {
 /* .list-item {
     font-weight: 900;
 } */
+
+pre {
+    font-size: medium;
+}
+
+.highlight{
+    background-color: rgb(235, 243, 243);
+}
