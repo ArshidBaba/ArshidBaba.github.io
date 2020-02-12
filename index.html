@@ -35,6 +35,9 @@
   <h3 class="list-heading">Table of Contents:</h3>
   <ul>
     <li>
+      <a href=#mergesort>Merge Sort</a>
+    </li>
+    <li>
       <a href=#Test>Learning Test Driven Development</a>
     </li>
     <li>
@@ -60,6 +63,43 @@
     </li>
   </ul>
   <br>
+
+  <a href="mergesort"><h1>Merge Sort</h1></a>
+  <hr>
+
+  <p>Here is the Divide and Conquer example incliding merge sort.</p>
+  <div class="highlight">
+      <pre> 
+        <b>MERGE</b>(<i><b>A</b>,p,q,r</i>)
+          <i>n1</i> = <i>q - p</i> + 1
+          <i>n2</i> = <i>r - q</i>
+          let <i><b>L</b></i>[1..<i>n1</i> + 1] and <i><b>R</b></i>[1..<i>n2</i> + 1] be new arrays
+          <b>for</b> <i>i</i> = 1 <b>to</b> <i>n1</i>
+                <i><b>L</b></i>[<i>i</i>] = <i><b>A</b></i>[<i>p</i> + <i>i</i> - 1]
+          <b>for</b> <i>j</i> = 1 <b>to</b> <i>n2</i>
+                <i><b>R</b></i>[<i>j</i>] = <i><b>A</b></i>[<i>q</i> + <i>j</i>]
+          <i><b>L</b></i>[<i>n1</i> + 1] = infinity
+          <i><b>R</b></i>[<i>n1</i> + 1] = infinity
+          <i>i</i> = 1
+          <i>j</i> = 1
+          <b>for</b> <i>k</i> = <i>p</i><b> to</b> <i>r</i>
+              <b>if</b> <b><i>L</i></b>[<i>i</i>] <= <i><b>R</b></i>[<i>j</i>]
+                <i><b>A</b></i>[<i>k</i>] = <i><b>L</b></i>[<i>i</i>]
+                <i>i</i> = <i>i</i> + 1
+              <b>else</b>
+                <i><b>A</b></i>[<i>k</i>] = <i><b>R</b></i>[<i>j</i>]
+                <i>j</i> = <i>j</i> + 1
+      </pre>
+
+      <pre>
+        <b>MERGE-SORT</b>(<b><i>A</i></b>,<i>p,r</i>)
+          <b>if</b> <i>p</i> < <i>r</i>
+            <i>q</i> = floor((<i>p</i> + <i>r</i>)/2)
+            <b>MERGE-SORT</b>(<b><i>A</i></b>,<i>p,q</i>)
+            <b>MERGE-SORT</b>(<b><i>A</i></b>,<i>q</i> + 1,<i>r</i>)
+            <b>MERGE</b>(<i><b>A</b>,p,q,r</i>)
+      </pre>
+    </div>
 
   <a name="Test"><h1>Learning Test Driven Development</h1></a>
   <hr>
@@ -121,16 +161,13 @@
   $$\Omega(n\log{}n)$$
 
   \[ \sum_{k=1}^n k^2 = \frac{1}{2} n (n+1).\] -->
-   <div class="highlight">
-      <pre> 
-        <b>MERGE</b>(<i>A,p,q,r</i>)
-          <i>n1</i> = <i>q - p</i> + 1
-          <i>n2</i> = <i>r - q</i>
-          let <i><b>L</b></i>[1..<i>n1</i> + 1] and <i><b>R</b>[1..n2 + 1</i> be new arrays
-          <b>for</b> <i>i</i> = 1 <b>to</b> <i>n1</i>
-                <i>L[i] = A[p + i - 1]</i>
-          <b>for</b> <i>j</i> = 1
-          result&nbsp;:= head
+   
+
+
+
+          
+
+          <!-- result&nbsp;:= head
           // merge nodes into array
           <b>while</b> result ≠ nil <b>do</b>
                next&nbsp;:= result.next;
@@ -150,7 +187,7 @@
           <b>return</b> result
          
       </pre>
-  </div>
+  </div> -->
   
   </body>
 </html>
