@@ -120,17 +120,16 @@
 
   $$\Omega(n\log{}n)$$
 
-  \[ \sum_{k=1}^n k^2 = \frac{1}{2} n (n+1).\]
-  <div class="highlight">
+  \[ \sum_{k=1}^n k^2 = \frac{1}{2} n (n+1).\] -->
+   <div class="highlight">
       <pre> 
-        <b>function</b> merge_sort(<i>node</i> head) <b>is</b>
-          // return if empty list
-          <b>if</b> head = nil <b>then</b>
-              <b>return</b> nil
-          <b>var</b> <i>node</i> array[32]; initially all nil
-          <b>var</b> <i>node</i> result
-          <b>var</b> <i>node</i> next
-          <b>var</b> <i>int</i>  i
+        <b>MERGE</b>(<i>A,p,q,r</i>)
+          <i>n1</i> = <i>q - p</i> + 1
+          <i>n2</i> = <i>r - q</i>
+          let <i><b>L</b></i>[1..<i>n1</i> + 1] and <i><b>R</b>[1..n2 + 1</i> be new arrays
+          <b>for</b> <i>i</i> = 1 <b>to</b> <i>n1</i>
+                <i>L[i] = A[p + i - 1]</i>
+          <b>for</b> <i>j</i> = 1
           result&nbsp;:= head
           // merge nodes into array
           <b>while</b> result ≠ nil <b>do</b>
@@ -151,7 +150,7 @@
           <b>return</b> result
          
       </pre>
-  </div> -->
+  </div>
   
   </body>
 </html>

@@ -94,10 +94,11 @@ hr {
     font-weight: 900;
 } */
 
-pre {
+/* pre {
     font-size: medium;
-}
+} */
 
 .highlight{
     background-color: rgb(235, 243, 243);
+    font-size: large;
 }
