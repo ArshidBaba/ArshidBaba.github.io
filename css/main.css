@@ -1,6 +1,7 @@
 body {
     margin: 40px auto;
     width: 75%;
+    background-color: rgb(205, 208, 212);
 }
 nav ul, footer ul {
     font-family: 'Lucida Console', 'Monaco', 'monospace';
@@ -15,7 +16,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: rgb(72, 84, 245);
+    color: rgb(109, 111, 243);
     /* font-weight: 800; */
 }
 a:hover {
