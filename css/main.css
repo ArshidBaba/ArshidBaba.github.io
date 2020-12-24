@@ -40,6 +40,16 @@ h2 {
     font-weight: 500;
     /* font-style: bold; */
 }
+h3{
+    font-size: 1em;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* text-decoration: underline; */
+    /* 'Lucida Console', 'Monaco', 'monospace'; */
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-weight: 500;
+    /* font-style: bold; */
+}
 p {
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 1.2em;
