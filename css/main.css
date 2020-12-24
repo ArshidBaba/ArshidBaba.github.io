@@ -38,13 +38,14 @@ h2 {
     margin-top: 0px;
     margin-bottom: 1px;
     font-weight: 500;
+    /* font-style: bold; */
 }
 p {
     font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.6em;
     color: #333;
-    font-weight: 400;
+    font-weight: 500;
 }
 footer {
     border-top: 1px solid #d5d5d5;
