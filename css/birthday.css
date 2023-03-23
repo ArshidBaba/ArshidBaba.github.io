@@ -978,6 +978,22 @@ body {
     -moz-animation: flame 0.5s infinite linear;
 }
 
+.box {
+    position: absolute;
+    right: -150px;
+    height: 250px;
+    width: 300px;
+    line-height: 2em;
+    border-radius: 15px;
+    background: #f87a63;
+    font-size: large;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height-step: 3;
+    text-decoration-color: blue;
+    color: #35042e
+}
+
 @-webkit-keyframes flame {
     0% {
         height: 12px;
