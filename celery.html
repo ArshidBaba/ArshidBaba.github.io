@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computation &cap; Mathematics &cap; Physics + Stuff</title>
+    <!-- link to main stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script> -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: {extensions: ["mhchem.js"]}
+          });
+          </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+          tex2jax: { inlineMath: [ ["\\$", "\\$"], ["\\(", "\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+          TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+          messageStyle: "none"
+            }); 
+          </script>
+
+
+    <!-- <script type="text/javascript" async
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+          </script> -->
+</head>
+
+<body>
+    <a name="Celery">
+        <h1>Celery with Django</h1>
+    </a>
+    <hr>
+    <p>In production environment the tasks that take longer to execute are supposed to run seperately so that we can
+        achieve maximum throughput on requests and responses. For Django with <a
+            href="https://celery.readthedocs.io/en/latest/django/first-steps-with-django.html">Celery</a>. Celery is a
+        task
+        queue which helps us run longer running code asynchronously. It used Redis or RabbitMQ as the task broker. I
+        used
+        Celery to send an email from the backend because sending an email is also a time consuming task so we delegate
+        it to
+        Celery. I made it work quickly in my local environment but it was giving me trouble in production. I was
+        deploying
+        my app to Heroku and Celery wasn't executong properly.</p>
+</body>
+
+</html>
