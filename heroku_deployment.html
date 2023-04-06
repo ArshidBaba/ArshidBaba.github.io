@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computation &cap; Mathematics &cap; Physics + Stuff</title>
+    <!-- link to main stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script> -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: {extensions: ["mhchem.js"]}
+          });
+          </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+          tex2jax: { inlineMath: [ ["\\$", "\\$"], ["\\(", "\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+          TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+          messageStyle: "none"
+            }); 
+          </script>
+
+
+    <!-- <script type="text/javascript" async
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+          </script> -->
+</head>
+
+<body>
+    <a name="Heroku_Deployment">
+        <h1>Heroku Deployment</h1>
+    </a>
+    <hr>
+    <p>I had never deployed a website before so my first deployment platform is <a href="http://heroku.com/">Heroku</a>.
+        I
+        found many things of ease and struggled with many other things. I noticed one thing is that heroku allocates
+        resources which usually are provided by <a href="https://aws.amazon.com/">AWS</a> for example the Redis cache I
+        used
+        for asynchronouus tasks was actually an amazon ec2 instance and it turned out the Heroku is hosted on AWS.</p>
+    <p>Heroku uses the concept of dynos.</p>
+</body>
+
+</html>
