@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computation &cap; Mathematics &cap; Physics + Stuff</title>
+    <!-- link to main stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script> -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: {extensions: ["mhchem.js"]}
+          });
+          </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+          tex2jax: { inlineMath: [ ["\\$", "\\$"], ["\\(", "\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+          TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+          messageStyle: "none"
+            }); 
+          </script>
+
+
+    <!-- <script type="text/javascript" async
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+          </script> -->
+</head>
+
+
+<body>
+    <br>
+    <a name="microservices">
+        <h1 class="heading">Learning Microservices Architecture</h1>
+    </a>
+    <hr>
+
+    <p>I started learning microservice architecture. The framework I chose is FastAPI because it is Python so the code
+        would be a little familiar to me. I chose this so that I could implement Tahir's Travel project in it. I am
+        thinking of making two seperate services. One service would be the main software for building itenirary and the
+        second would be a dashboard for business side to manage their clients and payments. I am thinking developing one
+        microservice in FastAPI and the other in Spring Boot. I am not sure about the Spring Boot yet as it has a more
+        steep learning curve for me than FastAPI. If I couldn't not make the service in Spring Boot then I would make
+        both the services in FastAPI.</p>
+
+
+    <br>
+</body>
+
+</html>
