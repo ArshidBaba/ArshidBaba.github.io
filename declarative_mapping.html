@@ -50,11 +50,9 @@
     </a>
     <hr>
 
-    <p>I decided to learn Spring Boot. I was torn between Node.js and Spring Boot and then I figured it I already know
-        Java and don't know much JavaScript so Spring Boot would be an easier and quicker choice. It is my second day
-        and I didn't find it that hard as many people have hyped it to be. I learned the Enities, Repositories,
-        Services, Controllers and Implementation classes. It certainly has more layers than Django but I still think
-        that Django is more hard for a Beginner to learn compared to Spring Boot.</p>
+    <p>SQLAlchemy supports declarative mapping, which basically means you import a declarative_class and instantiate a
+        Base class and then make every other class inherit from that Base class. Below is an example of
+        declarative mapping.</p>
 
     <br>
 
@@ -68,7 +66,7 @@
     
                 # an example mapping using the base
                 class User(Base):
-                __tablename__ = "user"
+                    __tablename__ = "user"
     
                     id = Column(Integer, primary_key=True)
                     name = Column(String)
