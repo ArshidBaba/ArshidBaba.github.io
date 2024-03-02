@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computation &cap; Mathematics &cap; Physics + Stuff</title>
+    <!-- link to main stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/lib/codemirror.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
+
+    <!-- <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script> -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: {extensions: ["mhchem.js"]}
+          });
+          </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+          tex2jax: { inlineMath: [ ["\\$", "\\$"], ["\\(", "\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+          TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+          messageStyle: "none"
+            }); 
+          </script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- <script type="text/javascript" async
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+          </script> -->
+    <script src="js/prism.js"></script>
+</head>
+
+
+<body>
+    <br>
+    <a name="declarative_mapping">
+        <h1 class="heading">Declarative Mapping in SQLAlchemy</h1>
+    </a>
+    <hr>
+
+    <p>I decided to learn Spring Boot. I was torn between Node.js and Spring Boot and then I figured it I already know
+        Java and don't know much JavaScript so Spring Boot would be an easier and quicker choice. It is my second day
+        and I didn't find it that hard as many people have hyped it to be. I learned the Enities, Repositories,
+        Services, Controllers and Implementation classes. It certainly has more layers than Django but I still think
+        that Django is more hard for a Beginner to learn compared to Spring Boot.</p>
+
+    <br>
+
+
+    <pre><code id="python_code" class="code">
+                from sqlalchemy import Column, Integer, String, ForeignKey
+                from sqlalchemy.orm import declarative_base
+    
+                # declarative base class
+                Base = declarative_base()
+    
+                # an example mapping using the base
+                class User(Base):
+                __tablename__ = "user"
+    
+                    id = Column(Integer, primary_key=True)
+                    name = Column(String)
+                    fullname = Column(String)
+                    nickname = Column(String)</code></pre>
+    <script type="text/javascript">
+        window.onload = function () {
+            var codeElement = document.getElementById('python_code');
+            // Add code mirror class for coloring (default is the theme)
+            codeElement.classList.add('cm-s-default');
+            var code = codeElement.innerText;
+
+            codeElement.innerHTML = "";
+
+            CodeMirror.runMode(
+                code,
+                'python',
+                codeElement
+            );
+        };
+    </script>
+</body>
+
+</html>

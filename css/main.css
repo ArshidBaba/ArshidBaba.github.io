@@ -138,6 +138,11 @@ hr {
     font-size: large;
 }
 
+.code {
+    font-size: large;
+    background-color: antiquewhite;
+}
+
 /* span {
     content: "\2229";
 } */
