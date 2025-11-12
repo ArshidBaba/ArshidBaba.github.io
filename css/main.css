@@ -21,12 +21,21 @@ footer ul li {
 
 a {
     text-decoration: none;
-    color: rgb(218, 119, 27);
+    /* color: rgb(10, 7, 207); */
     /* font-weight: 800; */
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(10, 7, 207);
+    /* same as normal link color */
+}
+
+b {
+    color: rgb(182, 0, 0);
 }
 
 h1 {
@@ -40,13 +49,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.40em;
     font-family: cursive;
     /* text-decoration: underline; */
     /* 'Lucida Console', 'Monaco', 'monospace'; */
     margin-top: 0px;
     margin-bottom: 1px;
     font-weight: 500;
+    color: rgb(233, 7, 7);
     /* font-style: bold; */
 }
 
